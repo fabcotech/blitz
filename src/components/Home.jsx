@@ -1,6 +1,8 @@
 import React, { Fragment, useState } from "react";
 import './Home.scss'
 
+const { PUBLIC_SITE } = import.meta.env;
+
 export default () => {
   return (
     <Fragment>
@@ -34,9 +36,9 @@ export default () => {
         <li>The employees or clients* are
         <strong>
           never asked for anything (no pop-ups or sign in forms)
-          <img src="/_smile.png" />
-          <img src="/_smile.png" />
-          <img src="/_smile.png" />.
+          <img src={`${PUBLIC_SITE}_smile.png`} />
+          <img src={`${PUBLIC_SITE}_smile.png`} />
+          <img src={`${PUBLIC_SITE}_smile.png`} />
         </strong>
         Prior to authenticating and only once, they must set up the public key in the browser and associate it to one or many trusted domain names (example: <strong>partnersportal.com</strong>)</li>
       </ul>
@@ -51,18 +53,18 @@ export default () => {
       </h2>
       <br />
       <p className="big green">
-        <img src="/_lockwithkeys.png" />
-        <img src="/_lockwithkeys.png" />
-        <img src="/_lockwithkeys.png" />
+        <img src={`${PUBLIC_SITE}_lockwithkeys.png`} />
+        <img src={`${PUBLIC_SITE}_lockwithkeys.png`} />
+        <img src={`${PUBLIC_SITE}_lockwithkeys.png`} />
         <strong>
           Clients will not ever send credentials to the wrong phishing website.</strong> The browser and blitz protocol guarantee it. Blitz only signs trusted domain names, it never authenticates for a slightly different domain name (example: <strong>partnerpsortal.com</strong>)
       </p>
       <br />
       <br />
       <p className="big green">
-        <img src="/_directhit.png" />
-        <img src="/_directhit.png" />
-        <img src="/_directhit.png" />
+        <img src={`${PUBLIC_SITE}_directhit.png`} />
+        <img src={`${PUBLIC_SITE}_directhit.png`} />
+        <img src={`${PUBLIC_SITE}_directhit.png`} />
         Clients feel safer and care less about the phishing attempts. They can focus more on their daily job and you too.
       </p>
 

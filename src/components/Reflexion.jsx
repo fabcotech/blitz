@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 import './Reflexion.scss'
 
+const { PUBLIC_SITE } = import.meta.env;
+
 class Reflexion extends React.Component {
   render() {
     return (
@@ -20,9 +22,9 @@ class Reflexion extends React.Component {
           <br />
           <br />
           In a phishing attack situation, the client may not know that he is on <strong>partnesrportal.com</strong> instead of <strong>partnersportal.com</strong>, but the browser knows it very well&nbsp;
-          <img src="/_lockwithkeys.png" />
-          <img src="/_lockwithkeys.png" />
-          <img src="/_lockwithkeys.png" />
+          <img src={`${PUBLIC_SITE}/_lockwithkeys.png`} />
+          <img src={`${PUBLIC_SITE}/_lockwithkeys.png`} />
+          <img src={`${PUBLIC_SITE}/_lockwithkeys.png`} />
           , the domains don't match. No need for Artificial Intelligence or complex pattern matching.
           <br />
           <br />

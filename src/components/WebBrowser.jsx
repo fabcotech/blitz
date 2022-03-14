@@ -49,6 +49,8 @@ class WebBrowser extends React.Component {
         </p>
         <p>
           <strong>Note : </strong> A black list could be added as well, to prevent a trusted domain name from spamming the user with authentication pop-ups. An alternative solution to this is also a third "remove domain" choice added to the pop-up. 
+          <br />
+          <strong>Note : </strong> The first exchange of public key between client and server can be done in many ways. In and enterprise context the security team may send the public pair to the employees or clients in a secure / private way. It is also possible that the client sends his public keys when he registers on the website.
         </p>
       </div> 
     );
