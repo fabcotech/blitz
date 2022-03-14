@@ -1,13 +1,14 @@
 {
   "name": "blitz",
   "version": "1.0.0",
-  "description": "",
+  "description": "The ultimate anti-phishing and passwordless authentication protocol",
   "main": "index.js",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "deploy": "astro build && gh-pages -d dist -b gh-pages"
   },
   "author": "FABCO",
   "license": "MIT",
